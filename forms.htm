@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!-- document type HTML5 -->
+<html>
+<!-- all HTML of this page -->
+
+<head>
+    <!-- our meta data about this page -->
+    <title>Forms</title> <!-- page title -->
+    <meta charset="UTF-8"> <!-- using utf8 to support åäö -->
+    <!-- We can put more tags here if we want -->
+</head>
+
+<body>
+
+    <h1>Forms</h1>
+
+    <form>
+        <label for="username">Username</label><br>
+        <input type="text" id="username" name="username" placeholder="Username" required>
+        <br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <br><br>
+        <label for="password">Passsword</label><br>
+        <input type="password" id="password" name="password" placeholder="Choose a password" required>
+
+
+        <p>Select your age</p>
+
+        <input type="radio" name="age" value="0-25" id="option1">
+        <label for="option1">0-25</label>
+        <input type="radio" name="age" value="26-50" id="option2">
+        <label for="option2">26-50</label>
+        <input type="radio" name="age" value="51+" id="option3">
+        <label for="option1">51+</label>
+
+        <br><br><br>
+
+        <label for="question">Security question</label>
+        <select name="question" id="question">
+            <option value="question1">What colour is your favourite pair of socks</option>
+            <option value="question2">If you could be a vegetable what would it be</option>
+            <option value="qeustion2">What is you best ever security question</option>
+        </select>
+
+        <label for="answer">Security question answer</label>
+        <input type="text" id="answer" name="answer" placeholder="You answer here">
+
+        <br><br>
+
+        <label for="id">Your bio:</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="About you"></textarea>
+
+        <br><br>
+        <input type="submit" value="Submit the form">
+    </form>
+
+</body>
+
+</html>
